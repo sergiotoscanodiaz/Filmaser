@@ -1,4 +1,4 @@
-# Filmaser
+<h1> Filmaser </h1>
 
 Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo de Aplicaciones Multiplataforma del IES Campanillas.
 
@@ -17,3 +17,5 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 - Inkscape para la creación de logos.
 
 # Mockup
+
+![mockup](./mockup.png)
