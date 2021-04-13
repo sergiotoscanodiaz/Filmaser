@@ -16,9 +16,9 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de favoritos. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan puntuar. 
 
-En el mockup se pueden ver las funcionalidades principales que tendrá Filmaser.
+En cuanto a la parte de administración, el administrador de la aplicación podrá añadir, modificar o eliminar series.
 
-La idea es que el administrador de la aplicación podrá añadir, modificar o eliminar series.
+En el mockup de abajo se pueden ver las funcionalidades principales que tendrá Filmaser. 
 
 <h3> ¿Qué se usará? </h3>
 
