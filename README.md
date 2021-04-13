@@ -1,8 +1,8 @@
 <h1> Filmaser </h1>
 
-![logo](./logo.png)
-
 Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo de Aplicaciones Multiplataforma del IES Campanillas.
+
+![logo](./logo.png)
 
 <h3> Descripción </h3>
 
