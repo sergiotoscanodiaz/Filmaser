@@ -34,22 +34,22 @@ Esta es una idea principal de la aplicación. Es probable que se cambien cosas e
 
 # Login
 
-![login_mockup](./mockup/login_mockup.png)
+![login_mockup](./mockup/login_mockup.PNG)
 
 # Registro
 
-![registro_mockup](./mockup/registro_mockup.png)
+![registro_mockup](./mockup/registro_mockup.PNG)
 
 # Principal
 
-![principal_mockup](./mockup/principal_mockup.png)
+![principal_mockup](./mockup/principal_mockup.PNG)
 
 # Serie
 
-![info_mockup](./mockup/info_mockup.png)
+![info_mockup](./mockup/info_mockup.PNG)
 
 # Lista
 
-![lista_mockup](./mockup/lista_mockup.png)
+![lista_mockup](./mockup/lista_mockup.PNG)
 
 No olvides de dejar una estrellita si te ha gustado el repositorio :)
