@@ -30,7 +30,7 @@ La idea es que el administrador de la aplicación podrá añadir, modificar o el
 
 <h3> Mockup </h3>
 
-Esta es una idea principal de la aplicación. Es probable que se cambien cosas en la aplicación final.
+Esta es una idea principal de la aplicación. Es probable que se cambien algunos aspectos en la aplicación final.
 
 # Login
 
