@@ -30,4 +30,26 @@ La idea es que el administrador de la aplicación podrá añadir, modificar o el
 
 <h3> Mockup </h3>
 
-![mockup](./mockup.png)
+Esta es una idea principal de la aplicación. Es probable que se cambien cosas en la aplicación final.
+
+# Login
+
+![login_mockup](./mockup/login_mockup.png)
+
+# Registro
+
+![registro_mockup](./mockup/registro_mockup.png)
+
+# Principal
+
+![principal_mockup](./mockup/principal_mockup.png)
+
+# Serie
+
+![info_mockup](./mockup/info_mockup.png)
+
+# Lista
+
+![lista_mockup](./mockup/lista_mockup.png)
+
+No olvides de dejar una estrellita si te ha gustado el repositorio :)
