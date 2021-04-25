@@ -29,6 +29,18 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Ionic.
 - Git.
 
+<h3> Histórico semanal </h3>
+
+<h5> SEMANA 1: 19/04 - 25/04 </h5>
+
+- Creación del proyecto ionic desde cero.
+- Modificación del logo en Inkscape.
+- Creación del proyecto en Firebase, configuración en local y creación de la base de datos.
+- Se ha creado una clase llamada Serie que alberga los campos necesarios.
+- Además, se han hecho páginas como la principal, la lista de favoritos o el login y el componente menú.
+- Se ha implementado dos servicios en la aplicación uno para la autenticación a la aplicación gracias a Firebase y otro para añadir series a una lista.
+
+
 <h3> Mockup </h3>
 
 Esta es una idea principal de la aplicación. Es probable que se cambien algunos aspectos en la aplicación final.

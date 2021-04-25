@@ -1,0 +1,14 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Filmaser-Ionic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {},
+  "windowsAndroidStudioPath": "C:/Program Files/Android/Android Studio/bin/studio64.exe"
+}
