@@ -14,7 +14,7 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 <h3> Funcionalidades </h3>
 
-Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de favoritos. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan puntuar. 
+Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento o pendientes, en la lista de seguimiento añadirlas a favoritos o vistas y en la de pendientes sólo seguirlas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan puntuar. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
 
 En cuanto a la parte de administración, el administrador de la aplicación podrá añadir, modificar o eliminar series.
@@ -40,6 +40,18 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Además, se han hecho páginas como la principal, la lista de favoritos o el login y el componente menú.
 - Se ha implementado dos servicios en la aplicación uno para la autenticación a la aplicación gracias a Firebase y otro para añadir series a una lista.
 
+<h5> SEMANA 2: 26/04 - 2/05 </h5>
+
+- Creación de la página de series pendientes, seguidas y vistas.
+- Las nuevas listas se han añadido al componente del menú.
+- Se ha implementado las guardas de las rutas en las nuevas páginas creadas para no poder acceder a ellas si no estás logueado.
+- Uso de la ventana modal para acceder a los distintos botones de las listas.
+- Se ha añadido el logo a la aplicación.
+- Refactorización de algunas partes de la aplicación.
+
+<h3> Bibliografía </h3>
+
+Aquí se añadirá la bibliografía...
 
 <h3> Mockup </h3>
 

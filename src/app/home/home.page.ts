@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { SerieService } from '../service/serie.service';
 import { Serie } from '../model/serie';
-
+import { ModalController } from '@ionic/angular';
+import { ListsPage } from '../modals/lists/lists.page';
 
 @Component({
   selector: 'app-home',
@@ -16,12 +17,22 @@ export class HomePage {
   clicked: boolean;
   index: number;
 
-  constructor(private service: SerieService) {
+  constructor(
+    private service: SerieService,
+    private modalController: ModalController) {
       this.generos = this.service.getGeneros();
       this.getData();
       this.buscarGenero = "todos";
       this.clicked = false;
       this.index = 0;
+  }
+
+  // Abre el modal de las listas
+  async openListsModal() {
+    const modal = await this.modalController.create({
+      component: ListsPage
+    });
+    return await modal.present();
   }
 
   getData() {
@@ -43,6 +54,16 @@ export class HomePage {
 
   addToFavoritos(serie: Serie) {
     this.service.addToFavoritos(serie)
+    .catch(error => console.error(error));
+  }
+
+  addToPendientes(serie: Serie) {
+    this.service.addToPendientes(serie)
+    .catch(error => console.error(error));
+  }
+
+  addToSeguidas(serie: Serie) {
+    this.service.addToSeguidas(serie)
     .catch(error => console.error(error));
   }
 

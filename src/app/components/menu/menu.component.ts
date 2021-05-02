@@ -29,7 +29,7 @@ export class MenuComponent implements OnInit {
       message: `¿Estás seguro de que quieres salir?`,
       buttons: [
         {
-          text: 'no',
+          text: 'No',
           role: 'cancel',
           cssClass: 'secondary'
         }, {

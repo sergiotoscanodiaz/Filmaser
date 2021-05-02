@@ -14,17 +14,45 @@ const routes: Routes = [
                           data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
+    path: 'lists',
+    loadChildren: () => import('./modals/lists/lists.module')
+                          .then( m => m.ListsPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin }
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module')
                           .then( m => m.PerfilPageModule),
                           canActivate: [AngularFireAuthGuard],
                           data: { authGuardPipe: redirectUnauthorizedToLogin} 
   },
+  {
+    path: 'viendo',
+    loadChildren: () => import('./pages/viendo/viendo.module')
+                          .then( m => m.ViendoPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin}
+  },
+  {
+    path: 'vistas',
+    loadChildren: () => import('./pages/vistas/vistas.module')
+                          .then( m => m.VistasPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin}
+  },
   { path: 'favoritos', 
     loadChildren: () => import('./pages/favoritos/favoritos.module')
                           .then( m => m.FavoritosPageModule),
                           canActivate: [AngularFireAuthGuard],
                           data: { authGuardPipe: redirectUnauthorizedToLogin } 
+  },
+  {
+    path: 'pendientes',
+    loadChildren: () => import('./pages/pendientes/pendientes.module')
+                          .then( m => m.PendientesPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin} 
   },
   {
     path: 'info',
@@ -47,7 +75,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
+  }
   
 ];
 

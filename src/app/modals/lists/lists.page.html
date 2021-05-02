@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="toolbar">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Tus listas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="content">
+
+  <ion-button color="button" class="ion-margin" expand="full" href="viendo">
+    <ion-icon name="eye"></ion-icon>
+    <ion-icon name="blank"></ion-icon>
+    Lista de seguimiento
+  </ion-button>
+  <ion-button color="button" class="ion-margin" expand="full" href="vistas">
+    <ion-icon name="checkmark-circle"></ion-icon>
+    <ion-icon name="blank"></ion-icon>
+    Series finalizadas
+  </ion-button>
+  <ion-button color="button" class="ion-margin" expand="full" href="favoritos">
+    <ion-icon name="star"></ion-icon>
+    <ion-icon name="blank"></ion-icon>
+    Favoritas
+  </ion-button>
+  <ion-button color="button" class="ion-margin" expand="full" href="pendientes">
+    <ion-icon name="calendar"></ion-icon>
+    <ion-icon name="blank"></ion-icon>
+    Pendientes
+  </ion-button>
+
+</ion-content>

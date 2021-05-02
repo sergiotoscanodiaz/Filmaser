@@ -39,7 +39,7 @@
   <div *ngFor="let serie of series">
     <div *ngIf="serie.generos.includes(buscarGenero) || buscarGenero == 'todos'" class="ion-padding">
       <div (click)="showDetails(serie.id)" class="ion-padding ion-text-center">
-        <img src="assets/img/{{serie.imagen}}" width="" height="300px" width="250px" alt="">
+        <img src="assets/img/{{serie.imagen}}" height="300px" width="250px" alt="">
         <h1 class="ion-text-center">{{serie.titulo}}</h1>
       </div>
       <div *ngIf="clicked && series[index].id == serie.id">
@@ -51,22 +51,33 @@
         <p class="ion-text-justify ion-padding"><i>{{ serie.descripcion }}</i></p>
         <h2>Año</h2>
         <p class="ion-text-justify ion-padding"><i>{{ serie.anio }}</i></p>
-        <ion-button color="button" (click)="addToFavoritos(serie)">
-          <ion-icon name="star-outline"></ion-icon>
+        <ion-button color="button" expand="full" (click)="addToSeguidas(serie)">
+          <ion-icon name="eye-outline"></ion-icon>
           <ion-icon name="blank"></ion-icon>
-          Añadir a tu lista
+          Seguir
         </ion-button>
+        <ion-button color="button" expand="full" (click)="addToPendientes(serie)">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-icon name="blank"></ion-icon>
+          Añadir a pendientes
+        </ion-button>
+        <!-- SEGUIR POR AQUÍ <ion-button color="button" (click)="addToPendientes(serie)">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-icon name="blank"></ion-icon>
+          Añadir a vistas
+        </ion-button> -->
       </div>
       <ion-item-divider color="content"></ion-item-divider>
     </div>
   </div>
 </ion-content>
 <ion-footer>
+
   <ion-toolbar color="toolbar">
-    <ion-button color="button" class="ion-margin" expand="full" href="favoritos">
-      <ion-icon name="star"></ion-icon>
+    <ion-button color="button" class="ion-margin" expand="full" (click)="openListsModal()">
+      <ion-icon name="list"></ion-icon>
       <ion-icon name="blank"></ion-icon>
-      Tu lista de favoritos
+      Tus listas
     </ion-button>
   </ion-toolbar>
 </ion-footer>

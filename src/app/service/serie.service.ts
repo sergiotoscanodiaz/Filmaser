@@ -53,8 +53,54 @@ export class SerieService {
     return this.httpClient.get('assets/data.json');
   }
 
+  /*  getSerie(nombre: string) {
+     return this.series.filter(s => s.titulo == nombre)[0];
+   } */
+
   getFavoritos(): Observable<Serie[]> {
-    return this.db.collection<Serie>('users/' + this.userId + '/series').snapshotChanges()
+    return this.db.collection<Serie>('users/' + this.userId + '/favoritas').snapshotChanges()
+      .pipe(
+        map(
+          snaps => snaps.map(
+            snap => <Serie>{
+              id: snap.payload.doc.id,
+              ...snap.payload.doc.data() as Serie
+            }
+          )
+        )
+      );
+  }
+
+  getPendientes(): Observable<Serie[]> {
+    return this.db.collection<Serie>('users/' + this.userId + '/pendientes').snapshotChanges()
+      .pipe(
+        map(
+          snaps => snaps.map(
+            snap => <Serie>{
+              id: snap.payload.doc.id,
+              ...snap.payload.doc.data() as Serie
+            }
+          )
+        )
+      );
+  }
+
+  getSeguidas(): Observable<Serie[]> {
+    return this.db.collection<Serie>('users/' + this.userId + '/viendo').snapshotChanges()
+      .pipe(
+        map(
+          snaps => snaps.map(
+            snap => <Serie>{
+              id: snap.payload.doc.id,
+              ...snap.payload.doc.data() as Serie
+            }
+          )
+        )
+      );
+  }
+
+  getVistas(): Observable<Serie[]> {
+    return this.db.collection<Serie>('users/' + this.userId + '/vistas').snapshotChanges()
       .pipe(
         map(
           snaps => snaps.map(
@@ -68,16 +114,24 @@ export class SerieService {
   }
 
   addToFavoritos(serie: Serie): Promise<DocumentReference> {
-    return this.db.collection<Serie>('users/' + this.userId + '/series').add(serie);
+    return this.db.collection<Serie>('users/' + this.userId + '/favoritas').add(serie);
   }
 
-  getSerie(nombre: string) {
-    return this.series.filter(s => s.titulo == nombre)[0];
+  addToPendientes(serie: Serie): Promise<DocumentReference> {
+    return this.db.collection<Serie>('users/' + this.userId + '/pendientes').add(serie);
   }
 
-  public deleteSerieById(id: string): Promise<void> {
+  addToSeguidas(serie: Serie): Promise<DocumentReference> {
+    return this.db.collection<Serie>('users/' + this.userId + '/viendo').add(serie);
+  }
+
+  addToVistas(serie: Serie): Promise<DocumentReference> {
+    return this.db.collection<Serie>('users/' + this.userId + '/vistas').add(serie);
+  }
+
+  public deleteFavoritoById(id: string): Promise<void> {
     console.log("Se ha eliminado la serie con el id: " + id);
-    return this.db.collection('users/' + this.userId + '/series').doc(id).delete();
+    return this.db.collection('users/' + this.userId + '/favoritas').doc(id).delete();
   }
 
   async alertDeleteFavorito(id: string, nombre: string) {
@@ -91,13 +145,85 @@ export class SerieService {
         }, {
           text: 'Aceptar',
           handler: () => {
-            this.deleteSerieById(id);
+            this.deleteFavoritoById(id);
           }
         }
       ]
     });
     await alert.present();
   }
+
+  public deletePendienteById(id: string): Promise<void> {
+    console.log("Se ha eliminado la serie con el id: " + id);
+    return this.db.collection('users/' + this.userId + '/pendientes').doc(id).delete();
+  }
+
+  async alertDeletePendiente(id: string, nombre: string) {
+    const alert = await this.alert.create({
+      header: 'Borrar serie',
+      message: `¿Estás seguro que quieres borrar la serie <strong> ${nombre}</strong> de tu lista de pendientes?`,
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+        }, {
+          text: 'Aceptar',
+          handler: () => {
+            this.deletePendienteById(id);
+          }
+        }
+      ]
+    });
+    await alert.present();
+  }
+
+  public deleteSeguidaById(id: string): Promise<void> {
+    console.log("Se ha eliminado la serie con el id: " + id);
+    return this.db.collection('users/' + this.userId + '/viendo').doc(id).delete();
+  }
+
+  async alertDeleteSeguida(id: string, nombre: string) {
+    const alert = await this.alert.create({
+      header: 'Borrar serie',
+      message: `¿Estás seguro que quieres borrar la serie <strong> ${nombre}</strong> de tu lista de seguimiento?`,
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+        }, {
+          text: 'Aceptar',
+          handler: () => {
+            this.deleteSeguidaById(id);
+          }
+        }
+      ]
+    });
+    await alert.present();
+  }
+
+  /* public deleteSeguidaById(id: string): Promise<void> {
+    console.log("Se ha eliminado la serie con el id: " + id);
+    return this.db.collection('users/' + this.userId + '/viendo').doc(id).delete();
+  }
+
+  async alertDeleteSeguida(id: string, nombre: string) {
+    const alert = await this.alert.create({
+      header: 'Borrar serie',
+      message: `¿Estás seguro que quieres borrar la serie <strong> ${nombre}</strong> de tu lista de seguimiento?`,
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+        }, {
+          text: 'Aceptar',
+          handler: () => {
+            this.deleteSeguidaById(id);
+          }
+        }
+      ]
+    });
+    await alert.present();
+  } */
 
 
 

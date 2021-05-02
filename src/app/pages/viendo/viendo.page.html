@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista de seguimiento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="content" class="ion-text-center">
+  <h6>¡Las series que estás viendo se encuentran aquí!</h6>
+  <div *ngFor="let serie of seguidas | async">
+    <div class="ion-margin-top">
+      <div class="ion-text-center">
+        <img src="assets/img/{{serie.imagen}}" width="" height="200px" alt="">
+        <h2>{{serie.titulo}}</h2> <i>{{ serie.anio }}</i>
+      </div>
+
+      <div class="ion-margin">
+        <p><i>{{ serie.descripcion }}</i></p>
+        <ion-button color="button" (click)="serieService.addToVistas(serie)">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="button" (click)="serieService.addToFavoritos(serie)">
+          <ion-icon name="star-outline"></ion-icon>
+        </ion-button>
+        <ion-button color="button" (click)="serieService.alertDeleteSeguida(serie.id, serie.titulo)">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <ion-item-divider color="content"></ion-item-divider>
+    </div>
+  </div>
+</ion-content>

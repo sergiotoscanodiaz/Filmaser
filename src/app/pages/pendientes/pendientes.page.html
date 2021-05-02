@@ -3,13 +3,13 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Lista de favoritos</ion-title>
+    <ion-title>Pendientes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content color="content" class="ion-text-center">
-  <h6>¡Tus series favoritas se encuentran aquí!</h6>
-  <div *ngFor="let serie of favoritos | async">
+  <h6>¡Tu series pendientes se encuentran aquí!</h6>
+  <div *ngFor="let serie of pendientes | async">
     <div class="ion-margin-top">
       <div class="ion-text-center">
         <img src="assets/img/{{serie.imagen}}" width="" height="200px" alt="">
@@ -17,8 +17,14 @@
       </div>
       <div class="ion-margin">
         <p><i>{{ serie.descripcion }}</i></p>
-        <ion-button color="button" (click)="serieService.alertDeleteFavorito(serie.id, serie.titulo)">Quitar de
-          favoritos</ion-button>
+        <ion-button color="button" (click)="serieService.addToSeguidas(serie)">
+          <ion-icon name="eye-outline"></ion-icon>
+          <ion-icon name="blank"></ion-icon>
+          Seguir
+        </ion-button>
+        <ion-button color="button" (click)="serieService.alertDeletePendiente(serie.id, serie.titulo)">
+          <ion-icon name="trash-outline" color="danger"></ion-icon>
+        </ion-button>
       </div>
       <ion-item-divider color="content"></ion-item-divider>
     </div>
