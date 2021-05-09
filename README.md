@@ -2,7 +2,7 @@
 
 Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo de Aplicaciones Multiplataforma del IES Campanillas.
 
-![logo](./logo.png)
+![logo](./mockup/logo.png)
 
 <h3> Descripción </h3>
 
@@ -48,6 +48,15 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Uso de la ventana modal para acceder a los distintos botones de las listas.
 - Se ha añadido el logo a la aplicación.
 - Refactorización de algunas partes de la aplicación.
+
+<h5> SEMANA 3: 3/05 - 9/05 </h5>
+
+- Modificación de algunas partes del la aplicación.
+- Limpieza de código.
+- Creación de una nueva clase para probar una funcionalidad nueva.
+- Comenzando a implementar los comentarios para las series vistas.
+- Uso del Storage para recordar el último email usado en el login de Filmaser.
+- Investigando para mejorar la aplicación.
 
 <h3> Bibliografía </h3>
 

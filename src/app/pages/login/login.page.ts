@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 import { AuthService } from 'src/app/service/auth.service';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-login',
@@ -11,15 +12,19 @@ import { AuthService } from 'src/app/service/auth.service';
 export class LoginPage implements OnInit {
 
   spinner: boolean = false;
+
   email: string;
   password: string;
+  antEmail: string;
+
   passwordType: string = 'password';
   passwordShown: boolean = false;
 
   constructor(
     private authService: AuthService,
     private router: Router,
-    public alertController: AlertController
+    public alertController: AlertController,
+    private storage: Storage
   ) { }
 
   ngOnInit() {
@@ -35,6 +40,13 @@ export class LoginPage implements OnInit {
       console.log(error);
       this.presentAlert();
     }
+    this.storage.set(this.antEmail, this.email);
+  }
+
+  recuerdaEmail() {
+    this.storage.get(this.antEmail).then((antEmail) => {
+      this.antEmail = antEmail;
+    })
   }
 
   async presentAlert() {
@@ -49,11 +61,11 @@ export class LoginPage implements OnInit {
   }
 
   togglePassword() {
-    if(this.passwordShown) {
-      this.passwordShown=false;
+    if (this.passwordShown) {
+      this.passwordShown = false;
       this.passwordType = 'password';
     } else {
-      this.passwordShown=true;
+      this.passwordShown = true;
       this.passwordType = 'text';
 
     }

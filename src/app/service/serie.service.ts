@@ -45,6 +45,8 @@ export class SerieService {
     );
   }
 
+
+
   getGeneros(): string[] {
     return this.generos;
   }

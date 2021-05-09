@@ -20,6 +20,13 @@
         <p><i>{{ serie.descripcion }}</i></p>
       </div>
 
+      <ion-item color="medium" class="ion-margin">
+        <ion-label position="stacked">Comentarios</ion-label>
+        <ion-input (keyup.enter)="addComentarios()" >
+          {{serie.titulo}}... 
+        </ion-input>
+      </ion-item>
+
       <ion-item-divider color="content"></ion-item-divider>
     </div>
   </div>
