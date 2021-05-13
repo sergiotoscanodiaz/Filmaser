@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="toolbar">
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ tituloPagina }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="content" class="ion-text-center" class="ion-padding">
+  <h3>¡Escribe qué te ha parecido la serie que acabas de terminar!</h3>
+ 
+    <ion-item color="toolbar">
+      <ion-label position="floating">Serie</ion-label>
+      <ion-input clearInput [(ngModel)]="comentario.serie"></ion-input>
+    </ion-item>
+
+    <ion-item color="toolbar">
+      <ion-label position="floating">Tu comentario</ion-label>
+      <ion-input clearInput [(ngModel)]="comentario.comentario"></ion-input>
+    </ion-item>
+
+    <ion-item color="toolbar">
+      <ion-label position="floating">Nota</ion-label>
+      <ion-input type="number" value="10" [(ngModel)]="comentario.nota"></ion-input>
+    </ion-item>
+
+    <ion-item color="toolbar">
+      <ion-label position="floating">Escrito por</ion-label>
+      <ion-input clearInput [(ngModel)]="comentario.apodo"></ion-input>
+    </ion-item>
+
+  <ion-button 
+    (click)="addComentario()"
+    color="button"
+    expand="block" 
+    class="capitalize" 
+    shape="round" 
+    href="/comentarios">
+    Guardar
+  </ion-button>
+</ion-content>

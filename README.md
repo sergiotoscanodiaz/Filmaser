@@ -6,7 +6,7 @@ Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo 
 
 <h3> Descripción </h3>
 
-Los usuarios podrán añadir las series que les gusten a una lista de favoritos.
+Los usuarios de Filmaser podrán añadir las series que les gusten a una lista de favoritos, de seguimiento, de finalizadas o de pendientes. Además, podrá comentar aquellas que haya terminado.
 
 <h3> Objetivos </h3>
 
@@ -14,7 +14,7 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 <h3> Funcionalidades </h3>
 
-Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento o pendientes, en la lista de seguimiento añadirlas a favoritos o vistas y en la de pendientes sólo seguirlas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan puntuar. 
+Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento o pendientes, en la lista de seguimiento añadirlas a favoritos o vistas y en la de pendientes sólo seguirlas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan comentar. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
 
 En cuanto a la parte de administración, el administrador de la aplicación podrá añadir, modificar o eliminar series.
@@ -58,9 +58,22 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Uso del Storage para recordar el último email usado en el login de Filmaser.
 - Investigando para mejorar la aplicación.
 
+<h5> Día 13/05 antes del checkpoint </h5>
+- Código actualizado con lo  que se ha avanzado esta semana.
+- APK generada.
+- Hosting de Firebase: https://filmaser-app.web.app/login
+- Bibliografía actualizada.
+- Vídeo explicativo Checkpoint: https://www.youtube.com/watch?v=OITGQ7hUGYU.
+
+<h5> SEMANA 4: 10/05 - 16/05 </h5>
+
+- Actualización el próximo 16/05.
+
 <h3> Bibliografía </h3>
 
-Aquí se añadirá la bibliografía...
+Por ahora he usado estas páginas para la realización de la aplicación:
+- [Ionic Framework](https://ionicframework.com/docs)
+- [Firebase](https://firebase.google.com/)
 
 <h3> Mockup </h3>
 

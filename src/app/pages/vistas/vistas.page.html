@@ -15,19 +15,19 @@
         <img src="assets/img/{{serie.imagen}}" width="" height="200px" alt="">
         <h2>{{serie.titulo}}</h2> <i>{{ serie.anio }}</i>
       </div>
-
-      <div class="ion-margin">
-        <p><i>{{ serie.descripcion }}</i></p>
-      </div>
-
-      <ion-item color="medium" class="ion-margin">
-        <ion-label position="stacked">Comentarios</ion-label>
-        <ion-input (keyup.enter)="addComentarios()" >
-          {{serie.titulo}}... 
-        </ion-input>
-      </ion-item>
-
       <ion-item-divider color="content"></ion-item-divider>
     </div>
   </div>
 </ion-content>
+
+<ion-footer>
+
+  <ion-toolbar color="toolbar">
+    <ion-button color="button" class="ion-margin" expand="full" (click)="addComentarioModal()">
+      <ion-icon name="add"></ion-icon>
+      <ion-icon name="blank"></ion-icon>
+      Añadir comentario
+    </ion-button>
+  </ion-toolbar>
+
+</ion-footer>

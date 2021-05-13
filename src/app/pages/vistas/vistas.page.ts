@@ -5,6 +5,10 @@ import { Serie } from 'src/app/model/serie';
 import { AngularFirestore, DocumentReference } from '@angular/fire/firestore';
 import { map } from 'rxjs/operators'
 import { AuthService } from 'src/app/service/auth.service';
+import { Router } from '@angular/router';
+import { ComentariosPage } from '../comentarios/comentarios.page';
+import { ModalController } from '@ionic/angular';
+import { NewComentarioPage } from 'src/app/modals/new-comentario/new-comentario.page';
 
 @Component({
   selector: 'app-vistas',
@@ -17,11 +21,12 @@ export class VistasPage implements OnInit {
 
   userId: string;
   
-
   constructor( 
     public serieService: SerieService,
     private db: AngularFirestore,
-    private authService: AuthService) {
+    private router: Router,
+    private authService: AuthService,
+    private modalController: ModalController) {
       this.authService.getCurrentUser().subscribe(
         () => this.vistas = serieService.getVistas(),
         data => this.userId = data.uid
@@ -31,22 +36,11 @@ export class VistasPage implements OnInit {
   ngOnInit() {
   }
 
-  getComentarios(): Observable<Serie[]> {
-    return this.db.collection<Serie>('users/' + this.userId + '/comentarios').snapshotChanges()
-      .pipe(
-        map(
-          snaps => snaps.map(
-            snap => <Serie>{
-              id: snap.payload.doc.id,
-              ...snap.payload.doc.data() as Serie
-            }
-          )
-        )
-      );
-  }
-
-  addComentarios(comentario: Serie){
-    return this.db.collection<Serie>('users/' + this.userId + '/comentarios').add(comentario);
-  }
+  async addComentarioModal(){
+    const modal = await this.modalController.create({
+      component: NewComentarioPage
+    });
+    return await modal.present();
+  } 
 
 }
