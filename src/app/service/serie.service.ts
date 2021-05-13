@@ -45,8 +45,6 @@ export class SerieService {
     );
   }
 
-
-
   getGeneros(): string[] {
     return this.generos;
   }
@@ -202,31 +200,5 @@ export class SerieService {
     });
     await alert.present();
   }
-
-  /* public deleteSeguidaById(id: string): Promise<void> {
-    console.log("Se ha eliminado la serie con el id: " + id);
-    return this.db.collection('users/' + this.userId + '/viendo').doc(id).delete();
-  }
-
-  async alertDeleteSeguida(id: string, nombre: string) {
-    const alert = await this.alert.create({
-      header: 'Borrar serie',
-      message: `¿Estás seguro que quieres borrar la serie <strong> ${nombre}</strong> de tu lista de seguimiento?`,
-      buttons: [
-        {
-          text: 'Cancelar',
-          role: 'cancel',
-        }, {
-          text: 'Aceptar',
-          handler: () => {
-            this.deleteSeguidaById(id);
-          }
-        }
-      ]
-    });
-    await alert.present();
-  } */
-
-
 
 }

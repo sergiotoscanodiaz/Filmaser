@@ -21,11 +21,18 @@ const routes: Routes = [
                           data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
-    path: 'perfil',
-    loadChildren: () => import('./pages/perfil/perfil.module')
-                          .then( m => m.PerfilPageModule),
+    path: 'new-comentario',
+    loadChildren: () => import('./modals/new-comentario/new-comentario.module')
+                          .then( m => m.NewComentarioPageModule),
                           canActivate: [AngularFireAuthGuard],
-                          data: { authGuardPipe: redirectUnauthorizedToLogin} 
+                          data: { authGuardPipe: redirectUnauthorizedToLogin }
+  },
+  {
+    path: 'edit-comentario/:id',
+    loadChildren: () => import('./modals/new-comentario/new-comentario.module')
+                          .then( m => m.NewComentarioPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
     path: 'viendo',
@@ -55,6 +62,13 @@ const routes: Routes = [
                           data: { authGuardPipe: redirectUnauthorizedToLogin} 
   },
   {
+    path: 'comentarios',
+    loadChildren: () => import('./pages/comentarios/comentarios.module')
+                          .then( m => m.ComentariosPageModule),
+                          canActivate: [AngularFireAuthGuard],
+                          data: { authGuardPipe: redirectUnauthorizedToLogin} 
+  },
+  {
     path: 'info',
     loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
   },
@@ -75,8 +89,8 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
-  }
-  
+  },
+   
 ];
 
 @NgModule({
