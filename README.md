@@ -63,6 +63,7 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - APK generada.
 - Hosting de Firebase: https://filmaser-app.web.app/login
 - Bibliografía actualizada.
+
 - Vídeo explicativo Checkpoint: https://www.youtube.com/watch?v=OITGQ7hUGYU.
 
 <h5> SEMANA 4: 10/05 - 16/05 </h5>
