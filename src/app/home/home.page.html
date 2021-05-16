@@ -9,15 +9,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content">
+<ion-content>
 
   <ion-card color="toolbar" class="ion-text-center">
     <img src="assets/img/logo.png">
     <ion-card-header>
       <ion-card-title>
-        <ion-icon name="hand-left"></ion-icon>
         <b>¡Buen día FILMASERIÉFILO!</b>
-        <ion-icon name="hand-right"></ion-icon>
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
@@ -27,7 +25,7 @@
     </ion-card-content>
   </ion-card>
 
-  <ion-item class="border" color="content">
+  <ion-item class="border">
     <ion-label position="floating">Género</ion-label>
     <ion-select [(ngModel)]="buscarGenero">
       <ion-select-option value="todos" selected>Todos</ion-select-option>
@@ -62,7 +60,7 @@
           Añadir a pendientes
         </ion-button>
       </div>
-      <ion-item-divider color="content"></ion-item-divider>
+      <ion-item-divider></ion-item-divider>
     </div>
   </div>
 </ion-content>

@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content" class="ion-text-center">
+<ion-content class="ion-text-center">
   <h6>¡Tu series pendientes se encuentran aquí!</h6>
   <div *ngFor="let serie of pendientes | async">
     <div class="ion-margin-top">
@@ -26,7 +26,7 @@
           <ion-icon name="trash-outline" color="danger"></ion-icon>
         </ion-button>
       </div>
-      <ion-item-divider color="content"></ion-item-divider>
+      <ion-item-divider></ion-item-divider>
     </div>
   </div>
 

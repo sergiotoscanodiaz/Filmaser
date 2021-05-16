@@ -89,7 +89,11 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'miscomentarios',
+    loadChildren: () => import('./pages/miscomentarios/miscomentarios.module').then( m => m.MiscomentariosPageModule)
   },
+
    
 ];
 

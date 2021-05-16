@@ -59,6 +59,7 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Investigando para mejorar la aplicación.
 
 <h5> Día 13/05 antes del checkpoint </h5>
+
 - Código actualizado con lo  que se ha avanzado esta semana.
 - APK generada.
 - Hosting de Firebase: https://filmaser-app.web.app/login
@@ -67,7 +68,16 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 
 <h5> SEMANA 4: 10/05 - 16/05 </h5>
 
-- Actualización el próximo 16/05.
+- Creación de la página de comentarios y de miscomentarios.
+- Implementación de un servicio nuevo para la parte de los comentarios.
+- Página modal para añadir comentarios.
+- Cambios en la aparencia de la aplicación.
+- Generación de la primera APK para el checkpoint de esta semana.
+- Modificación de código.
+
+<h5> SEMANA 5: 17/05 - 23/05 </h5>
+
+- Próximo día 23/05 actualización.
 
 <h3> Bibliografía </h3>
 

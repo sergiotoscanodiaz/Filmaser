@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content" class="ion-text-center">
+<ion-content class="ion-text-center">
   <h6>¡Las series que has terminado se encuentran aquí!</h6>
   <div *ngFor="let serie of vistas | async">
     <div class="ion-margin-top">
@@ -15,7 +15,7 @@
         <img src="assets/img/{{serie.imagen}}" width="" height="200px" alt="">
         <h2>{{serie.titulo}}</h2> <i>{{ serie.anio }}</i>
       </div>
-      <ion-item-divider color="content"></ion-item-divider>
+      <ion-item-divider></ion-item-divider>
     </div>
   </div>
 </ion-content>

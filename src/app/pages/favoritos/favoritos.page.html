@@ -7,7 +7,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content" class="ion-text-center">
+<ion-content class="ion-text-center">
   <h6>¡Tus series favoritas se encuentran aquí!</h6>
   <div *ngFor="let serie of favoritos | async">
     <div class="ion-margin-top">
@@ -20,7 +20,7 @@
         <ion-button color="button" (click)="serieService.alertDeleteFavorito(serie.id, serie.titulo)">Quitar de
           favoritos</ion-button>
       </div>
-      <ion-item-divider color="content"></ion-item-divider>
+      <ion-item-divider></ion-item-divider>
     </div>
   </div>
 

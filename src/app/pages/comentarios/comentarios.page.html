@@ -7,8 +7,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content">
-  <ion-card *ngFor="let comentario of comentarios | async">
+<ion-content>
+  <ion-card color="content" *ngFor="let comentario of comentarios | async">
     <ion-card-header>
       <ion-card-subtitle>      
          Valoración de {{ comentario.apodo }}: <strong>{{ comentario.nota }}</strong>
