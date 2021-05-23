@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
   logged: boolean = false;
 
   constructor(
-    private authService: AuthService,
+    public authService: AuthService,
     private alert: AlertController) { }
 
   ngOnInit() { }

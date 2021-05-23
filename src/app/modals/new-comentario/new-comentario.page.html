@@ -9,36 +9,36 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="content" class="ion-text-center" class="ion-padding">
-  <h3>¡Escribe qué te ha parecido la serie que acabas de terminar!</h3>
- 
-    <ion-item color="toolbar">
-      <ion-label position="floating">Serie</ion-label>
-      <ion-input clearInput [(ngModel)]="comentario.serie"></ion-input>
-    </ion-item>
+<ion-content class="ion-text-center" class="ion-padding">
+  <h4>¡Escribe qué te ha parecido la serie que acabas de terminar!</h4>
 
-    <ion-item color="toolbar">
-      <ion-label position="floating">Tu comentario</ion-label>
-      <ion-input clearInput [(ngModel)]="comentario.comentario"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-label position="floating">Serie</ion-label>
+    <ion-input clearInput [(ngModel)]="comentario.serie"></ion-input>
+  </ion-item>
 
-    <ion-item color="toolbar">
-      <ion-label position="floating">Nota</ion-label>
-      <ion-input type="number" value="10" [(ngModel)]="comentario.nota"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-label position="floating">Tu comentario</ion-label>
+    <ion-input clearInput [(ngModel)]="comentario.comentario"></ion-input>
+  </ion-item>
 
-    <ion-item color="toolbar">
-      <ion-label position="floating">Escrito por</ion-label>
-      <ion-input clearInput [(ngModel)]="comentario.apodo"></ion-input>
-    </ion-item>
+  <ion-item>
+    <ion-label position="floating">Tu nota</ion-label>
+    <ion-input type="number" min="0" max="10" [(ngModel)]="comentario.nota"></ion-input>
+  </ion-item>
 
-  <ion-button 
-    (click)="addComentario()"
-    color="button"
-    expand="block" 
-    class="capitalize" 
-    shape="round" 
-    href="/comentarios">
+  <ion-item>
+    <ion-label position="floating">Escrito por</ion-label>
+    <ion-input clearInput [(ngModel)]="comentario.apodo"></ion-input>
+  </ion-item> <br>
+
+  <ion-button (click)="addMiComentario()" (click)="addComentario()" color="button" expand="block" class="capitalize"
+    shape="round" href="/miscomentarios">
     Guardar
   </ion-button>
+
+  <ion-button color="button" expand="block" class="capitalize" shape="round" href="/vistas">
+    Cancelar
+  </ion-button>
+
 </ion-content>

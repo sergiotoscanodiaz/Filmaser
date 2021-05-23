@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Comentario } from 'src/app/model/comentario';
 import { ComentarioService } from 'src/app/service/comentario.service';
@@ -13,16 +12,11 @@ export class ComentariosPage implements OnInit {
 
   comentarios: Observable<Comentario[]>;
 
-  constructor(private comentaService: ComentarioService,
-              private router: Router) {
+  constructor(private comentaService: ComentarioService) {
     this.comentarios = this.comentaService.getComentarios();
    }
 
   ngOnInit() {
-  }
-
-  goEditComentario(id: string) {
-    this.router.navigateByUrl('edit-comentario/' + id);
   }
 
 }

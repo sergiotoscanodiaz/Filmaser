@@ -77,13 +77,23 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 
 <h5> SEMANA 5: 17/05 - 23/05 </h5>
 
-- Próximo día 23/05 actualización.
+- Añadidos nuevos métodos para añadir, editar y borrar comentarios.
+- Terminada parte de miscomentarios.
+- Añadido botón de miscomentarios en la lista de botones.
+- Solucionados errores de la aplicación.
+- Incluido un nuevo botón para la parte de información.
+- Investigando cómo empezar con la parte del administrador.
+
+<h5> SEMANA 6: 24/05 - 30/05 </h5>
+
+- Próximo día 30/05 actualización.
 
 <h3> Bibliografía </h3>
 
 Por ahora he usado estas páginas para la realización de la aplicación:
 - [Ionic Framework](https://ionicframework.com/docs)
 - [Firebase](https://firebase.google.com/)
+- [IonIcons](https://ionic.io/ionicons)
 
 <h3> Mockup </h3>
 

@@ -18,7 +18,7 @@ export class PendientesPage implements OnInit {
     private authService: AuthService
   ) {
     this.authService.getCurrentUser().subscribe(
-      () => this.pendientes = serieService.getPendientes(),
+      () => this.pendientes = this.serieService.getPendientes(),
     );
   }
 

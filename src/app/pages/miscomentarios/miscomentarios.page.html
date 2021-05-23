@@ -1,9 +1,38 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>miscomentarios</ion-title>
+  <ion-toolbar color="toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mis comentarios</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-card color="toolbar" *ngFor="let micomentario of miscomentarios | async">
+    <ion-card-header>
+      <ion-card-subtitle>
+        Valoración de {{ micomentario.apodo }}: <strong>{{ micomentario.nota }}</strong>
+      </ion-card-subtitle>
+      <ion-card-title>
+        {{ micomentario.comentario }}
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>
+        <i>{{ micomentario.serie }}</i>
+      </ion-label>
+    </ion-card-content>
+
+    <div class="ion-text-center">
+      <ion-icon name="create" class="edit" (click)="goEditComentario(micomentario.id)">
+      </ion-icon>
+      <ion-icon name="close-circle" class="edit"
+        (click)="comentaService.alertDeleteComentario(micomentario.id, micomentario.serie)">
+      </ion-icon>
+    </div>
+
+  </ion-card>
 
 </ion-content>

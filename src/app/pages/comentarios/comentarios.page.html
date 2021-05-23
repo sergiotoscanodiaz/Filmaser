@@ -1,14 +1,14 @@
 <ion-header>
   <ion-toolbar color="toolbar">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="vistas"></ion-back-button>
+      <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
     <ion-title>Comentarios</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card color="content" *ngFor="let comentario of comentarios | async">
+  <ion-card color="toolbar" *ngFor="let comentario of comentarios | async">
     <ion-card-header>
       <ion-card-subtitle>      
          Valoración de {{ comentario.apodo }}: <strong>{{ comentario.nota }}</strong>
@@ -23,12 +23,6 @@
         <i>{{ comentario.serie }}</i>
       </ion-label>
     </ion-card-content>
-<!--          
-    <ion-icon name="create" (click)="goEditComentario(comentario.id)">
-    </ion-icon>
-    <ion-icon name="close-circle" (click)="comentaService.deleteComentarioById(comentario.id)">
-    </ion-icon>
- -->
   </ion-card>
 
 </ion-content>

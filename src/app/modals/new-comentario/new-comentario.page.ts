@@ -11,7 +11,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class NewComentarioPage implements OnInit {
 
-  comentario: Comentario = { serie: '', comentario: '', nota: 1, apodo: 'Anónimo' };
+  comentario: Comentario = { serie: 'La serie que acabas de ver', comentario: '¿Qué te ha parecido?', nota: 10, apodo: 'Anónimo' };
   tituloPagina: string = 'Nuevo comentario';
   action: string = 'create';
   id: string;
@@ -41,6 +41,13 @@ export class NewComentarioPage implements OnInit {
   addComentario() {
     if (this.action === 'create') {
       this.comentaService.addComentario(this.comentario);
+    } 
+    this.closeModal();
+  }
+
+  addMiComentario() {
+    if (this.action === 'create') {
+      this.comentaService.addMiComentario(this.comentario);
     } else {
       this.comentaService.updateComentarioById(this.id, this.comentario);
     }

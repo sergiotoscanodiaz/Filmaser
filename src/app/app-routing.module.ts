@@ -69,6 +69,13 @@ const routes: Routes = [
                           data: { authGuardPipe: redirectUnauthorizedToLogin} 
   },
   {
+    path: 'miscomentarios',
+    loadChildren: () => import('./pages/miscomentarios/miscomentarios.module')
+                         .then( m => m.MiscomentariosPageModule),
+                         canActivate: [AngularFireAuthGuard],
+                         data: { authGuardPipe: redirectUnauthorizedToLogin} 
+  },
+  {
     path: 'info',
     loadChildren: () => import('./pages/info/info.module').then( m => m.InfoPageModule)
   },
@@ -89,11 +96,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
-    path: 'miscomentarios',
-    loadChildren: () => import('./pages/miscomentarios/miscomentarios.module').then( m => m.MiscomentariosPageModule)
-  },
-
+  }
    
 ];
 
