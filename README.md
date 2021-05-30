@@ -17,7 +17,7 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento o pendientes, en la lista de seguimiento añadirlas a favoritos o vistas y en la de pendientes sólo seguirlas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan comentar. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
 
-En cuanto a la parte de administración, el administrador de la aplicación podrá añadir, modificar o eliminar series.
+En cuanto a la parte de administración, el administrador de la aplicación podrá eliminar comentarios que no sean respetuosos.
 
 En el mockup de abajo se pueden ver las funcionalidades principales que tendrá Filmaser. 
 
@@ -86,7 +86,16 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 
 <h5> SEMANA 6: 24/05 - 30/05 </h5>
 
-- Próximo día 30/05 actualización.
+- Creación de la página de administración desde cero.
+- Creación de las páginas necesarias como login o reset.
+- La aplicación Filmaser está terminada. Sin embargo, se le añadirán nuevas series al JSON o pequeñas funcionalidades.
+- Conexión de Filmaser-Admin con el proyecto de Firebase.
+- Implementación del servicio de autenticación.
+- Añadiendo las funcionalidades de los comentarios como los de la aplicación en Filmaser-Admin para que el administrador pueda eliminar comentarios.
+
+<h5> SEMANA 7: 31/05 - 6/06 </h5>
+
+- Próxima actualización el 6/06.
 
 <h3> Bibliografía </h3>
 
