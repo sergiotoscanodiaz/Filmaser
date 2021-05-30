@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="end">
+      <ion-button *ngIf="authService.getCurrentUser() | async" (click)="alertLogout()">
+        <ion-icon color="danger" name="exit" slot="start"></ion-icon>
+        <ion-label>Salir</ion-label>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Administración de Filmaser
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+</ion-content>

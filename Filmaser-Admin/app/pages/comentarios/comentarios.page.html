@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Comentarios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="dark" *ngFor="let comentario of comentarios | async">
+    <ion-card-header>
+      <ion-card-subtitle>      
+         Valoración de {{ comentario.apodo }}: <strong>{{ comentario.nota }}</strong>
+    </ion-card-subtitle>
+      <ion-card-title>
+        {{ comentario.comentario }}
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-label>
+        <i>{{ comentario.serie }}</i>
+      </ion-label>
+    </ion-card-content>
+
+    <div class="ion-text-center">
+      <ion-icon name="close-circle" class="edit"
+        (click)="comentaService.alertDeleteComentario(comentario.id, comentario.serie)">
+      </ion-icon>
+    </div>
+  </ion-card>
+
+</ion-content>
