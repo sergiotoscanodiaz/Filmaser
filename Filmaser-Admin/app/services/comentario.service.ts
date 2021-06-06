@@ -48,7 +48,7 @@ export class ComentarioService {
   async alertDeleteComentario(id: string, nombre: string) {
     const alert = await this.alert.create({
       header: 'Borrar comentario',
-      message: `¿Estás seguro que quieres borrar este comentario de la serie <strong> ${nombre}</strong>?`,
+      message: `¿Estás seguro de que este comentario de la serie <strong> ${nombre}</strong> no es apropiado?`,
       buttons: [
         {
           text: 'Cancelar',

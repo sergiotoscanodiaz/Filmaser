@@ -7,8 +7,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card color="dark" *ngFor="let comentario of comentarios | async">
+<ion-content class="ion-text-center">
+
+  <p><ion-icon color="warning" class="action" name="information-circle-outline"></ion-icon>Elimina únicamente aquellos comentarios que no sean respetuosos</p>
+  <ion-card color="primary" *ngFor="let comentario of comentarios | async">
     <ion-card-header>
       <ion-card-subtitle>      
          Valoración de {{ comentario.apodo }}: <strong>{{ comentario.nota }}</strong>
@@ -25,7 +27,7 @@
     </ion-card-content>
 
     <div class="ion-text-center">
-      <ion-icon name="close-circle" class="edit"
+      <ion-icon name="close-circle" class="action"
         (click)="comentaService.alertDeleteComentario(comentario.id, comentario.serie)">
       </ion-icon>
     </div>

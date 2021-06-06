@@ -8,20 +8,28 @@
   <ion-grid>
     <ion-row>
       <ion-col class="ion-text-center">
-        <img src="assets/img/logo.png" height="220px">
+        <img height="220px" src="assets/img/logo.png">
       </ion-col>
     </ion-row>
   </ion-grid>
 
   <ion-list class="ion-padding">
     <ion-item>
-      <ion-input class="ion-text-center" clearInput placeholder="Correo electrónico" [(ngModel)]="email">
+      <ion-input 
+        class="ion-text-center" 
+        clearInput 
+        [(ngModel)]="email">
       </ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [type]="passwordType" class="ion-text-center" clearInput placeholder="Contraseña"
-        (keyup.enter)="login()" [(ngModel)]="password">
+      <ion-input 
+        [type]="passwordType" 
+        class="ion-text-center" 
+        clearInput 
+        placeholder="Contraseña"
+        (keyup.enter)="login()"
+        [(ngModel)]="password">
       </ion-input>
       <ion-icon name="eye" color="gray" (click)="togglePassword()"> </ion-icon>
     </ion-item>

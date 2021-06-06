@@ -5,6 +5,10 @@
         <ion-icon color="danger" name="exit" slot="start"></ion-icon>
         <ion-label>Salir</ion-label>
       </ion-button>
+      <ion-button *ngIf="authService.getCurrentUser() | async" (click)="alertLogout()" href="/reset-password">
+        <ion-icon color="warning" name="key" slot="start"></ion-icon>
+        <ion-label>Cambiar contraseña</ion-label>
+      </ion-button>
     </ion-buttons>
     <ion-title>
       Administración de Filmaser
@@ -12,6 +16,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-text-center">
+
+  <ion-card color="toolbar" class="ion-text-center">
+    <img height="220px" src="assets/img/logo.png">
+    <ion-card-header>
+      <ion-card-title>
+        <b>¡Buen día FILMASER-ADMIN!</b>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Comprueba si hay comentarios que no sean respetuosos
+    </ion-card-content>
+  </ion-card>
+
+  <br>
+
+  <ion-button class="capitalize" size="large" strong fill="outline" shape="round" href="/comentarios">Eliminar comentarios</ion-button>
   
 </ion-content>

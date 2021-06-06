@@ -1,4 +1,28 @@
 [
+ {
+    "generos": [
+      "Superhéroes",
+      "Ciencia ficción",
+      "Crimen",
+      "Acción"
+    ],
+    "descripcion": "Loki es llevado ante la misteriosa organización llamada Autoridad de Variación Temporal después de robar el Cubo Cósmico durante los eventos de Avengers: Endgame y se le da a elegir enfrentarse a la eliminación de la realidad o ayudar contra una amenaza mayor,​ por lo cual Loki termina viajando a través del tiempo, alterando la historia humana.",
+    "titulo": "Loki",
+    "imagen": "lokimarvel.jpg",
+    "anio": 2021
+  },
+ {
+    "generos": [
+      "Superhéroes",
+      "Ciencia ficción",
+      "Drama",
+      "Acción"
+    ],
+    "descripcion": "Seis meses después de recibir el escudo de parte del Capitán América al final de Avengers: Endgame, Sam Wilson se une a Bucky Barnes en una aventura alrededor del mundo que pone a prueba sus habilidades y su paciencia",
+    "titulo": "Falcon y el Soldado de Invierno",
+    "imagen": "falcon.jpg",
+    "anio": 2021
+  },
   {
     "generos": [
       "Superhéroes",
@@ -22,6 +46,30 @@
     "titulo": "Dark",
     "imagen": "dark.jpg",
     "anio": 2017
+  },
+ {
+    "generos": [
+      "Acción",
+      "Drama",
+      "Suspenso",
+      "Crimen"
+    ],
+    "descripcion": "La historia sigue al ladrón profesional Assane Diop, el único hijo de un inmigrante de Senegal que había llegado a Francia para buscar una vida mejor para su hijo. ",
+    "titulo": "Lupin",
+    "imagen": "lupin.jpg",
+    "anio": 2021
+  },
+ {
+    "generos": [
+      "Drama",
+      "Terror psicológico",
+      "Misterio",
+      "Suspense"
+    ],
+    "descripcion": "Ratched es una serie dramática de suspenso que cuenta la historia del origen de la enfermera de asilo Mildred Ratched. En 1947, Mildred llega al norte de California para buscar empleo en un importante hospital psiquiátrico donde se han iniciado nuevos e inquietantes experimentos sobre la mente humana.",
+    "titulo": "Ratched",
+    "imagen": "ratched.jpg",
+    "anio": 2020
   },
   {
     "generos": [

@@ -95,7 +95,16 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 
 <h5> SEMANA 7: 31/05 - 6/06 </h5>
 
-- Próxima actualización el 6/06.
+- Implementación de un botón para acceder a la parte de comentarios en el home.
+- Añadido un botón para cambiar la contraseña en el home.
+- Nuevos estilos en la parte de los comentarios.
+- Nuevos estilos en la parte del home.
+- Nuevas series añadidas en Filmaser-App.
+- Filmaser-Admin está terminada. Sin embargo, se le añadirán, posiblemente, pequeñas funcionalidades.
+
+<h5> SEMANA 8: 7/06 - 13/06 </h5>
+
+- Próxima actualización el 13/06.
 
 <h3> Bibliografía </h3>
 
