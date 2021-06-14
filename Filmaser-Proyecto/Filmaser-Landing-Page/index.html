@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/anime.min.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/javascript.js"></script>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="assets/favicon.ico" rel="icon">
+    <title>Filmaser</title>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <nav>
+            <a class="active"><b>FILMASER</b></a>
+            <a href="#uno">¿QUÉ ES?</a>
+            <a href="#dos">FUNCIONALIDAD</a>
+            <a href="#tres">REALIZADA CON</a>
+            <a href="#cuatro">CONTACTO</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </nav>
+    </div>
+
+    <svg width="100.92397mm" height="35.7823172mm" viewBox="0 0 137.92397 9.7823172" version="1.1" id="svg8"
+        inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)" sodipodi:docname="dibujo.svg">
+        <g inkscape:label="Capa 1" inkscape:groupmode="layer" id="layer1" transform="translate(-53.981623,-41.857339)">
+
+            <text xml:space="preserve"
+                style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;stroke-width:0.264583"
+                x="62.384827" y="59.712132" id="texto">
+                <tspan sodipodi:role="line" id="tspan837" x="17.384827" y="55.712132" style="stroke-width:0.264583">
+                    ¡BIENVENIDO A FILMASER!
+                </tspan>
+            </text>
+        </g>
+    </svg>
+
+    <header>
+        <div id="bienvenido">
+            <img alt="logo" src="assets/logo.svg" height="320vw">
+        </div>
+    </header>
+
+    <div class="resumen">
+        <h2 id="uno">¿QUÉ ES?</h2>
+        <p> Filmaser es una aplicación donde podrás gestionar tus series favoritas y comentarlas.</p>
+        <video alt="video" autoplay muted loop height="600vh">
+            <source src="assets/filmaser.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class=funcionalidad>
+        <h2 id="dos">FUNCIONALIDAD</h2>
+        <ul>
+            <li>En la página principal, los usuarios pueden ver una lista de series y filtrarlas por géneros.</li>
+            <li>Cada serie contiene una lista de géneros, una sinopsis y el año de su estreno.</li>
+            <li>En esta página, el usuario puede añadir la serie a su lista de seguimiento o de pendientes</li>
+            <li>La aplicación cuenta con un menú donde acceder a las distintas funcionalidades.</li>
+            <li>En la lista de pendientes, los usuarios pueden añadir las series a su lista de seguimiento.</li>
+            <li>En la lista de seguimiento, los usuarios pueden añadir las series a su lista de series finalizadas y
+                favoritas.</li>
+            <li>En la lista de favoritos, los usuarios pueden ver sus series favoritas</li>
+            <li>En la lista de finalizadas, los usuarios pueden ver sus series finalizadas y comentarlas</li>
+            <li>Además, Filmaser cuenta con una Comunidad donde ver las valoraciones de los usuarios</li>
+        </ul>
+    </div>
+
+    <div class=imagen>
+        <h2 id="tres">REALIZADA CON</h2>
+        <img src="assets/angular.png" alt="Angular">
+        <img src="assets/ionic.png" alt="Ionic">
+        <img src="assets/firebase.png" alt="Firebase">
+        <img src="assets/visualstudio.png" alt="VisualStudioCode">
+        <img src="assets/github.png" alt="GitHub">
+    </div>
+
+    <div class=contacto>
+        <h2 id="cuatro">CONTACTO</h2>
+        Puedes ponerte en contacto conmigo de muchas formas.<br>
+        <b>sergiotoscano2407@outlook.com</b>
+
+        <ul>
+            <li><a href="https://github.com/sergiotoscanodiaz"><img src="assets/githubicon.png"></img></a></li>
+            <li><a href="https://www.youtube.com/channel/UCJ1tTZac1n1Vf0zcLk9VVqQ"><img
+                        src="assets/youtube.png"></img></a></li>
+            <li><a href="https://twitter.com/tosquimlg07"><img src="assets/twitter.png"></img></a></li>
+            <li><a href="https://www.linkedin.com/in/sergio-toscano-d%C3%ADaz-40652a1a4/"><img
+                        src="assets/linkedin.png"></img></a></li>
+        </ul>
+    </div>
+
+    <div class="audio">
+        <h2>ADIVINA LA SERIE</h2>
+        Antes de probar Filmaser, reproduce este audio e intenta adivinar las series a partir del segundo 10.
+        <br>
+        <audio controls>
+            <source src="assets/adivina.mp3">
+        </audio>
+        <br>
+        <a href="https://www.youtube.com/watch?v=_-QShdD2r6g">Comprueba si has acertado aquí</a>
+    </div><br>
+
+    <div>
+        <h2>PRUEBA FILMASER</h2>
+        <p>Si te parece buena idea, registrate a Filmaser desde hoy</p>
+        <canvas alt="Filmaser" id="boton" width="200" height="80"></canvas>
+    </div>
+
+    <footer>
+        <p>HECHO POR SERGIO TOSCANO DÍAZ - 2ºDAM - IES CAMPANILLAS</p>
+    </footer>
+
+    <script>
+
+        var tl = anime.timeline({
+            autoplay: true,
+            duration: 1000
+        });
+
+        tl.add({
+            targets: '#texto',
+            translateY: [40, 10],
+            translateX: [-70, -1],
+            elasticity: 800,
+            duration: 2600
+        })
+
+
+    </script>
+
+</body>
+
+</html>
