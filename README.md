@@ -19,8 +19,6 @@ La aplicación contendrá una página en la que se podrá ver una breve descripc
 
 En cuanto a la parte de administración, el administrador de la aplicación podrá eliminar comentarios que no sean respetuosos.
 
-En el mockup de abajo se pueden ver las funcionalidades principales que tendrá Filmaser. 
-
 <h3> ¿Qué se usará? </h3>
 
 - Visual Studio Code para la realización de la aplicación.
@@ -56,7 +54,7 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 - Creación de una nueva clase para probar una funcionalidad nueva.
 - Comenzando a implementar los comentarios para las series vistas.
 - Uso del Storage para recordar el último email usado en el login de Filmaser.
-- Investigando para mejorar la aplicación.
+- Añadido un filtro por géneros para cubrir la parte del punto 3 de la Opción 2 de Sistemas de Gestión Empresarial.
 
 <h5> Día 13/05 antes del checkpoint </h5>
 
@@ -104,7 +102,16 @@ En el mockup de abajo se pueden ver las funcionalidades principales que tendrá 
 
 <h5> SEMANA 8: 7/06 - 13/06 </h5>
 
-- Próxima actualización el 13/06.
+- Resuelto un problema con el hosting de Filmaser-App.
+- Limpieza general de código.
+- Comentando código.
+- Terminada la Landing Page de Filmaser cubriendo todos los requisitos, pendiente de subida.
+- Empezando con la presentación en PDF.
+- Pendiente la grabación del vídeo descriptivo.
+
+<h5> SEMANA 9: 14/06 - 16/06 </h5>
+
+- Próxima actualización el 16/06.
 
 <h3> Bibliografía </h3>
 
@@ -112,6 +119,7 @@ Por ahora he usado estas páginas para la realización de la aplicación:
 - [Ionic Framework](https://ionicframework.com/docs)
 - [Firebase](https://firebase.google.com/)
 - [IonIcons](https://ionic.io/ionicons)
+- [It-swarm-es.com](https://www.it-swarm-es.com/es/firebase/como-elimino-un-sitio-alojado-de-firebase/829794163/)
 
 <h3> Mockup </h3>
 

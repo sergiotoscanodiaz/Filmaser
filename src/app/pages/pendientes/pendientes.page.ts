@@ -3,6 +3,7 @@ import { SerieService } from 'src/app/service/serie.service';
 import { Observable } from 'rxjs';
 import { Serie } from 'src/app/model/serie';
 import { AuthService } from 'src/app/service/auth.service';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-pendientes',
@@ -14,8 +15,9 @@ export class PendientesPage implements OnInit {
   pendientes: Observable<Serie[]>;
 
   constructor(
-    private serieService: SerieService,
-    private authService: AuthService
+    public serieService: SerieService,
+    private authService: AuthService,
+    public toastController: ToastController
   ) {
     this.authService.getCurrentUser().subscribe(
       () => this.pendientes = this.serieService.getPendientes(),
@@ -23,6 +25,16 @@ export class PendientesPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  async presentSegToast() {
+    const toast = await this.toastController.create({
+      header: 'Serie añadida correctamente',
+      duration: 2000,
+      color: 'primary',
+      message: "Comprueba tu lista de seguimiento"
+    });
+    toast.present();
   }
 
 }

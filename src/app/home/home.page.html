@@ -49,13 +49,13 @@
         <p class="ion-text-justify ion-padding"><i>{{ serie.descripcion }}</i></p>
         <h2>Año</h2>
         <p class="ion-text-justify ion-padding"><i>{{ serie.anio }}</i></p>
-        <ion-button color="button" expand="full" (click)="addToSeguidas(serie)">
-          <ion-icon name="eye-outline"></ion-icon>
+        <ion-button color="button" expand="full" (click)="service.addToSeguidas(serie)" (click)="presentSegToast()">
+          <ion-icon name="eye-outline" color="primary"></ion-icon>
           <ion-icon name="blank"></ion-icon>
           Seguir
         </ion-button>
-        <ion-button color="button" expand="full" (click)="addToPendientes(serie)">
-          <ion-icon name="calendar-outline"></ion-icon>
+        <ion-button color="button" expand="full" (click)="service.addToPendientes(serie)" (click)="presentPenToast()">
+          <ion-icon name="calendar-outline" color="medium"></ion-icon>
           <ion-icon name="blank"></ion-icon>
           Añadir a pendientes
         </ion-button>

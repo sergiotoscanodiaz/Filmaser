@@ -17,9 +17,10 @@
       </div>
       <div class="ion-margin">
         <p><i>{{ serie.descripcion }}</i></p>
-        <ion-button color="button" (click)="serieService.alertDeleteFavorito(serie.id, serie.titulo)">Quitar de
-          favoritos</ion-button>
       </div>
+      <ion-button color="button" (click)="serieService.alertDeleteFavorita(serie.id, serie.titulo)">
+        <ion-icon name="trash-outline" color="danger"></ion-icon>
+      </ion-button>
       <ion-item-divider></ion-item-divider>
     </div>
   </div>

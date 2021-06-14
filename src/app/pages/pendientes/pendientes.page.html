@@ -17,8 +17,8 @@
       </div>
       <div class="ion-margin">
         <p><i>{{ serie.descripcion }}</i></p>
-        <ion-button color="button" (click)="serieService.addToSeguidas(serie)">
-          <ion-icon name="eye-outline"></ion-icon>
+        <ion-button color="button" (click)="serieService.addToSeguidas(serie)" (click)="presentSegToast()">
+          <ion-icon name="eye-outline" color="primary"></ion-icon>
           <ion-icon name="blank"></ion-icon>
           Seguir
         </ion-button>

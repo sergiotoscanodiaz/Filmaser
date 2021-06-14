@@ -3,6 +3,7 @@ import { SerieService } from '../service/serie.service';
 import { Serie } from '../model/serie';
 import { ModalController } from '@ionic/angular';
 import { ListsPage } from '../modals/lists/lists.page';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -18,8 +19,9 @@ export class HomePage {
   index: number;
 
   constructor(
-    private service: SerieService,
-    private modalController: ModalController) {
+    public service: SerieService,
+    private modalController: ModalController,
+    public toastController: ToastController) {
       this.generos = this.service.getGeneros();
       this.getData();
       this.buscarGenero = "todos";
@@ -52,19 +54,24 @@ export class HomePage {
     }
   }
 
-  addToFavoritos(serie: Serie) {
-    this.service.addToFavoritos(serie)
-    .catch(error => console.error(error));
+  async presentPenToast() {
+    const toast = await this.toastController.create({
+      header: 'Serie añadida correctamente',
+      duration: 2000,
+      color: 'medium',
+      message: "Comprueba tu lista de pendientes"
+    });
+    toast.present();
   }
-
-  addToPendientes(serie: Serie) {
-    this.service.addToPendientes(serie)
-    .catch(error => console.error(error));
-  }
-
-  addToSeguidas(serie: Serie) {
-    this.service.addToSeguidas(serie)
-    .catch(error => console.error(error));
+ 
+  async presentSegToast() {
+    const toast = await this.toastController.create({
+      header: 'Serie añadida correctamente',
+      duration: 2000,
+      color: 'primary',
+      message: "Comprueba tu lista de seguimiento"
+    });
+    toast.present();
   }
 
 }

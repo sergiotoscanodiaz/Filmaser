@@ -19,7 +19,6 @@ export class NewComentarioPage implements OnInit {
   constructor(
     private modalController: ModalController,
     private comentaService: ComentarioService,
-    private router: Router,
     private activatedRoute: ActivatedRoute
   ) { }
 

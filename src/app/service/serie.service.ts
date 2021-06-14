@@ -14,7 +14,6 @@ export class SerieService {
 
   generos: string[] = [];
   generosAux: string[] = [];
-  favoritos: Serie[] = [];
 
   userId: string;
   series: Serie[];
@@ -52,10 +51,6 @@ export class SerieService {
   getSeries(): Observable<any> {
     return this.httpClient.get('assets/data.json');
   }
-
-  /*  getSerie(nombre: string) {
-     return this.series.filter(s => s.titulo == nombre)[0];
-   } */
 
   getFavoritos(): Observable<Serie[]> {
     return this.db.collection<Serie>('users/' + this.userId + '/favoritas').snapshotChanges()
@@ -134,7 +129,7 @@ export class SerieService {
     return this.db.collection('users/' + this.userId + '/favoritas').doc(id).delete();
   }
 
-  async alertDeleteFavorito(id: string, nombre: string) {
+  async alertDeleteFavorita(id: string, nombre: string) {
     const alert = await this.alert.create({
       header: 'Borrar serie',
       message: `¿Estás seguro que quieres borrar la serie <strong> ${nombre}</strong> de tu lista de favoritos?`,
