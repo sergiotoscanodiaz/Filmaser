@@ -65,6 +65,16 @@
       }
     }
   }
+
+    @media (max-width:1000px) {
+      #imagen {
+          grid-template-columns: repeat(4, 1fr);
+      }
+  }
+
+#imagen {
+  display:grid;
+}
   
   #bienvenido {
     display: flex;
