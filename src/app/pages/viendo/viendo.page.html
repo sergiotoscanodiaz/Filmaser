@@ -21,9 +21,6 @@
         <ion-button color="button" (click)="serieService.addToVistas(serie)" (click)="presentVisToast()">
           <ion-icon name="checkmark-circle-outline" color="success"></ion-icon>
         </ion-button>
-        <ion-button color="button" (click)="serieService.addToFavoritos(serie)" (click)="presentFavToast()">
-          <ion-icon name="star-outline" color="warning"></ion-icon>
-        </ion-button>
         <ion-button color="button" (click)="serieService.alertDeleteSeguida(serie.id, serie.titulo)">
           <ion-icon name="trash-outline" color="danger"></ion-icon>
         </ion-button>

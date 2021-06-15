@@ -17,6 +17,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit() { }
 
+  //Llama al método de logout del servicio
   logout() {
     this.authService.logout().then(
       () => location.reload()

@@ -23,14 +23,17 @@ export class ComentarioService {
     );
   }
 
+  // Añade el comentario a la comunidad
   public addComentario(comentario: Comentario): Promise<DocumentReference> {
     return this.db.collection<Comentario>('/comentarios').add(comentario);
   }
 
+  // Añade el comentario a la lista personal del usuario
   public addMiComentario(micomentario: Comentario): Promise<DocumentReference> {
     return this.db.collection<Comentario>('users/' + this.userId + '/miscomentarios').add(micomentario);
   }
 
+  // Recupera todos los comentarios publicados por los usuarios
   public getComentarios(): Observable<Comentario[]> {
     return this.db.collection('/comentarios').snapshotChanges()
       .pipe(
@@ -45,6 +48,7 @@ export class ComentarioService {
       );
   }
 
+  // Recupera todos los comentarios publicados por un usuario
   public getMisComentarios(): Observable<Comentario[]> {
     return this.db.collection('users/' + this.userId + '/miscomentarios').snapshotChanges()
       .pipe(
@@ -59,6 +63,7 @@ export class ComentarioService {
       );
   }
 
+  // Borra el comentario de la lista personal del usuario solamente
   public deleteComentarioById(id: string): Promise<void> {
     return this.db.collection('users/' + this.userId + '/miscomentarios').doc(id).delete();
   }
@@ -83,9 +88,12 @@ export class ComentarioService {
   }
 
 
+  // Actualiza el comentario en la lista personal
   public updateComentarioById(id: string, micomentario: Comentario): Promise<void> {
     return this.db.collection('users/' + this.userId + '/miscomentarios').doc(id).set(micomentario);    
   }
+
+  // Recupera los comentarios personales
   public getComentarioById(id: string): Observable<Comentario> {
     return this.db.collection('users/' + this.userId + '/miscomentarios').doc<Comentario>(id).valueChanges();
   }

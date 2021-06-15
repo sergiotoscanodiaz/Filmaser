@@ -11,6 +11,7 @@ export class AuthService {
     private afAuth: AngularFireAuth
   ) { }
 
+  // Login
   public login(
     email: string,
     password: string
@@ -18,14 +19,17 @@ export class AuthService {
     return this.afAuth.signInWithEmailAndPassword(email, password);
   }
 
+  // Logout
   logout(): Promise<void> {
     return this.afAuth.signOut();
   }
 
+  //Recupera el usuario actual
   public getCurrentUser(): Observable<firebase.default.User>{
     return this.afAuth.authState;
   }
 
+  //Crea un nuevo usuario
   createUser(
     email: string,
     password: string
@@ -34,6 +38,7 @@ export class AuthService {
     return this.afAuth.createUserWithEmailAndPassword(email, password);
   }
 
+  //Manda un email para resetear la contraseña
   resetPassword(email: string): Promise<void> {
     return this.afAuth.sendPasswordResetEmail(email);
   }

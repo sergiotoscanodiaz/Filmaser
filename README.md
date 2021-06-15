@@ -14,7 +14,7 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 <h3> Funcionalidades </h3>
 
-Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento o pendientes, en la lista de seguimiento añadirlas a favoritos o vistas y en la de pendientes sólo seguirlas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan comentar. 
+Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento, pendientes o favoritos y en la lista de seguimiento añadirlas a vistas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan comentar. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
 
 En cuanto a la parte de administración, el administrador de la aplicación podrá eliminar comentarios que no sean respetuosos.

@@ -16,12 +16,7 @@
         <h2>{{serie.titulo}}</h2> <i>{{ serie.anio }}</i>
       </div>
       <div class="ion-margin">
-        <p><i>{{ serie.descripcion }}</i></p>
-        <ion-button color="button" (click)="serieService.addToSeguidas(serie)" (click)="presentSegToast()">
-          <ion-icon name="eye-outline" color="primary"></ion-icon>
-          <ion-icon name="blank"></ion-icon>
-          Seguir
-        </ion-button>
+        <p><i>{{ serie.descripcion }}</i></p>       
         <ion-button color="button" (click)="serieService.alertDeletePendiente(serie.id, serie.titulo)">
           <ion-icon name="trash-outline" color="danger"></ion-icon>
         </ion-button>

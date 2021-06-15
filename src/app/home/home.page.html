@@ -58,6 +58,11 @@
           <ion-icon name="calendar-outline" color="medium"></ion-icon>
           <ion-icon name="blank"></ion-icon>
           Añadir a pendientes
+        </ion-button>       
+        <ion-button color="button" expand="full" (click)="service.addToFavoritos(serie)" (click)="presentFavToast()">
+          <ion-icon name="star-outline" color="warning"></ion-icon>
+          <ion-icon name="blank"></ion-icon>
+          Añadir a favoritos
         </ion-button>
       </div>
       <ion-item-divider></ion-item-divider>

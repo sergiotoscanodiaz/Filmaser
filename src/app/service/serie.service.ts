@@ -48,10 +48,12 @@ export class SerieService {
     return this.generos;
   }
 
+  // Obtiene las series del archivo JSON
   getSeries(): Observable<any> {
     return this.httpClient.get('assets/data.json');
   }
 
+  // Obtener las distintas listas tales como favoritos, pendientes, seguimiento o finalizadas.
   getFavoritos(): Observable<Serie[]> {
     return this.db.collection<Serie>('users/' + this.userId + '/favoritas').snapshotChanges()
       .pipe(
@@ -108,6 +110,7 @@ export class SerieService {
       );
   }
 
+  // Añade las series a las distintas listas tales como favoritos, pendientes, seguimiento o finalizadas.
   addToFavoritos(serie: Serie): Promise<DocumentReference> {
     return this.db.collection<Serie>('users/' + this.userId + '/favoritas').add(serie);
   }
@@ -124,6 +127,7 @@ export class SerieService {
     return this.db.collection<Serie>('users/' + this.userId + '/vistas').add(serie);
   }
 
+  // Borra las series de las distintas listas tales como favoritos, pendientes o seguimiento.
   public deleteFavoritoById(id: string): Promise<void> {
     console.log("Se ha eliminado la serie con el id: " + id);
     return this.db.collection('users/' + this.userId + '/favoritas').doc(id).delete();

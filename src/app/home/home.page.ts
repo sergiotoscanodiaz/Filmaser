@@ -74,4 +74,14 @@ export class HomePage {
     toast.present();
   }
 
+  async presentFavToast() {
+    const toast = await this.toastController.create({
+      header: 'Serie añadida correctamente',
+      duration: 2000,
+      color: 'warning',
+      message: "Comprueba tu lista de favoritos"
+    });
+    toast.present();
+  }
+
 }

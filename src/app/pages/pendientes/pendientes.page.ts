@@ -27,14 +27,4 @@ export class PendientesPage implements OnInit {
   ngOnInit() {
   }
 
-  async presentSegToast() {
-    const toast = await this.toastController.create({
-      header: 'Serie añadida correctamente',
-      duration: 2000,
-      color: 'primary',
-      message: "Comprueba tu lista de seguimiento"
-    });
-    toast.present();
-  }
-
 }
