@@ -24,7 +24,7 @@ En cuanto a la parte de administración, el administrador de la aplicación podr
 - Firebase para administrar la base de datos.
 - Angular.
 - Ionic.
-- Git.
+- GitHub.
 
 <h3> Acceder a Filmaser </h3>
 
