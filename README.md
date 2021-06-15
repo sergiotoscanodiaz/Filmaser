@@ -2,7 +2,7 @@
 
 Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo de Aplicaciones Multiplataforma del IES Campanillas.
 
-![logo](./mockup/logo.png)
+![logo](./Capturas-Filmaser/logo.png)
 
 <h3> Descripción </h3>
 
@@ -14,18 +14,29 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 <h3> Funcionalidades </h3>
 
-Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para no ver todas las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento, pendientes o favoritos y en la lista de seguimiento añadirlas a vistas. Cabe destacar que cada serie tiene información como el/los género/s, sinopsis y año. Otra funcionalidad en la que se trabajará será que las series que el usuario ha añadido a su lista se puedan comentar. 
+Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para buscar las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento, pendientes o favoritos y en la lista de seguimiento añadirlas a vistas. Cabe destacar que cada serie tiene información como los géneros, sinopsis y año. Además, se pueden comentar aquellas series que el usuario finalice. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
-
 En cuanto a la parte de administración, el administrador de la aplicación podrá eliminar comentarios que no sean respetuosos.
 
-<h3> ¿Qué se usará? </h3>
+<h3> ¿Qué se ha utilizado? </h3>
 
 - Visual Studio Code para la realización de la aplicación.
 - Firebase para administrar la base de datos.
 - Angular.
 - Ionic.
 - Git.
+
+<h3> Acceder a Filmaser </h3>
+
+- Hosting de Firebase: https://filmaser-app.web.app/login
+
+<h3> Tutorial de uso de la aplicación </h3>
+
+<h6> Login </h6>
+
+Lo primero que te encuentras en la aplicación es la pantalla de Login:
+
+![login](./Capturas-Filmaser/login.png)
 
 <h3> Histórico semanal </h3>
 
