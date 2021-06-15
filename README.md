@@ -2,7 +2,7 @@
 
 Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo de Aplicaciones Multiplataforma del IES Campanillas.
 
-![logo](./Capturas-Filmaser/logo.png)
+![logo](./Capturas-Filmaser/logo.PNG)
 
 <h3> Descripción </h3>
 
@@ -32,11 +32,11 @@ En cuanto a la parte de administración, el administrador de la aplicación podr
 
 <h3> Tutorial de uso de la aplicación </h3>
 
-<h6> Login </h6>
+<h4> Login </h4>
 
 Lo primero que te encuentras en la aplicación es la pantalla de Login:
 
-![login](./Capturas-Filmaser/login.png)
+![login](./Capturas-Filmaser/login.PNG)
 
 <h3> Histórico semanal </h3>
 
