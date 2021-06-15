@@ -38,6 +38,68 @@ Lo primero que te encuentras en la aplicación es la pantalla de Login:
 
 ![login](./Capturas-Filmaser/login.PNG)
 
+Puedes acceder más rápido gracias al almacenamiento local del correo:
+
+![inicio](./Capturas-Filmaser/inicio.gif)
+
+<h4> Registro y recuperar contraseña </h4>
+
+Desde la pantalla de login, puedes acceder a la pantalla de registro y de recuperar contraseña:
+
+![registro](./Capturas-Filmaser/registro.PNG) ![recuperar](./Capturas-Filmaser/recuperar.PNG)
+
+<h4> Menú de la aplicación </h4>
+
+De esta forma puedes acceder al menú de la aplicación y cerrar sesión:
+
+![menú](./Capturas-Filmaser/menú.gif) ![logout](./Capturas-Filmaser/logout.gif)
+
+Además, la aplicación cuenta con una ventana donde poder acceder a tus listas:
+
+![modalLista](./Capturas-Filmaser/modalLista.PNG)
+
+<h4> Filtrado de series </h4>
+
+Puedes filtrar por género para encontrar lo que buscas de una forma más rápida:
+
+![filtrado](./Capturas-Filmaser/filtrado.gif)
+
+<h4> Series </h4>
+
+Cada serie contiene distintos géneros, una sinopsis y el año de estreno:
+
+![infoSerie](./Capturas-Filmaser/infoSerie.gif)
+
+¿Cómo puedo añadir una serie a una lista? Es muy fácil:
+
+![addSerie](./Capturas-Filmaser/addSerie.gif)
+
+<h4> Listas </h4>
+
+La aplicación tiene cuatro tipo de listas distintas: favoritos, seguimiento, pendientes y finalizadas.
+
+![viendo](./Capturas-Filmaser/viendo.PNG) ![pendiente](./Capturas-Filmaser/pendiente.PNG)
+
+![favoritos](./Capturas-Filmaser/favoritos.PNG) ![finalizadas](./Capturas-Filmaser/finalizadas.gif)
+
+<h4> ¿Cómo comentar una serie? </h4>
+
+Para comentar una serie, tienes que ir a tu lista de series finalizadas y pulsar al botón de "Añadir Comentario":
+
+![comentar](./Capturas-Filmaser/comentar.gif)
+
+Los comentarios se guardan en tu lista personal y en la comunidad de Filmaser:
+
+![comunidad](./Capturas-Filmaser/comunidad.PNG)
+
+<h4> Sobre la aplicación </h4>
+
+En esta pantalla, se puede ver un resumen de Filmaser y un botón de contacto:
+
+![info](./Capturas-Filmaser/info.PNG)
+
+Tienes alguna duda, contacto conmigo a través de correo: sergiotoscano2407@outlook.es
+
 <h3> Histórico semanal </h3>
 
 <h5> SEMANA 1: 19/04 - 25/04 </h5>
