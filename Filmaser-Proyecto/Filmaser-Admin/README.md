@@ -8,6 +8,8 @@ Proyecto final de la app Filmaser en Ionic para el Grado Superior de Desarrollo 
 
 Lo primero que se ve en la aplicación es la pantalla de Login con el correo bloqueado, ya que Filmaser cuenta con un administrador en su inicio:
 
+![login](./Capturas/login.PNG)
+
 <h4> Reset </h4>
 
 El administrador puede solicitar recuperar la contraseña en caso de olvido:
