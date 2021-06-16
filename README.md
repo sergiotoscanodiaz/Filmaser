@@ -98,7 +98,7 @@ En esta pantalla, se puede ver un resumen de Filmaser y un botón de contacto:
 
 ![info](./Capturas-Filmaser/info.PNG)
 
-Tienes alguna duda, contacto conmigo a través de correo: sergiotoscano2407@outlook.es
+Tienes alguna duda, contacta conmigo a través de correo: sergiotoscano2407@outlook.es
 
 <h3> Histórico semanal </h3>
 
