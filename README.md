@@ -33,6 +33,7 @@ Vídeo presentación de Filmaser: https://youtu.be/Q37ZfuFrsYo
 <h3> Enlaces </h3>
 
 - Hosting de Firebase de Filmaser-App: https://filmaser-app.web.app/login
+- Hosting de Firebase de Filmaser-Landing-Page: https://filmaser-landing.web.app/
 
 <h3> Tutorial de uso de la aplicación </h3>
 
@@ -195,6 +196,8 @@ Tienes alguna duda, contacta conmigo a través de correo: sergiotoscano2407@outl
 - README actualizado.
 - Vídeo grabado.
 
+NOTA: En la carpeta Filmaser-Proyecto se encuentran: Filmaser-Presentación, Filmaser-Admin y Filmaser-Landing-Page.
+
 <h3> Bibliografía </h3>
 
 Por ahora he usado estas páginas para la realización de la aplicación:
@@ -202,6 +205,7 @@ Por ahora he usado estas páginas para la realización de la aplicación:
 - [Firebase](https://firebase.google.com/)
 - [IonIcons](https://ionic.io/ionicons)
 - [It-swarm-es.com](https://www.it-swarm-es.com/es/firebase/como-elimino-un-sitio-alojado-de-firebase/829794163/)
+- [Tutorial Hosting Landing Page Firebase](https://www.youtube.com/watch?v=drvXMz75k5s&list=WL&index=1&t=436s)
 
 <h3> Mockup </h3>
 
