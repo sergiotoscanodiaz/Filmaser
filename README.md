@@ -14,9 +14,13 @@ Filmaser es una aplicación orientada a aquellas personas que les gusten ver ser
 
 <h3> Funcionalidades </h3>
 
-Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí podrá ver una lista de series y filtrar según el género que quiera para buscar las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento, pendientes o favoritos y en la lista de seguimiento añadirlas a vistas. Cabe destacar que cada serie tiene información como los géneros, sinopsis y año. Además, se pueden comentar aquellas series que el usuario finalice. 
+Cuando el usuario inicie sesión con su cuenta o se registre, accederá a la página principal de la aplicación. Allí puede ver una lista de series y filtrar según el género que quiera para buscar las series. Aquellas series que al usuario le gusten, podrá añadirlas a una lista de seguimiento, pendientes o favoritos y en la lista de seguimiento añadirlas a vistas. Cabe destacar que cada serie tiene información como los géneros, sinopsis y año. Además, se pueden comentar aquellas series que el usuario finalice. 
 La aplicación contendrá una página en la que se podrá ver una breve descripción y mi github. 
 En cuanto a la parte de administración, el administrador de la aplicación podrá eliminar comentarios que no sean respetuosos.
+
+<h3> Vídeo </h3>
+
+Vídeo presentación de Filmaser: https://youtu.be/Q37ZfuFrsYo
 
 <h3> ¿Qué se ha utilizado? </h3>
 
@@ -26,9 +30,9 @@ En cuanto a la parte de administración, el administrador de la aplicación podr
 - Ionic.
 - GitHub.
 
-<h3> Acceder a Filmaser </h3>
+<h3> Enlaces </h3>
 
-- Hosting de Firebase: https://filmaser-app.web.app/login
+- Hosting de Firebase de Filmaser-App: https://filmaser-app.web.app/login
 
 <h3> Tutorial de uso de la aplicación </h3>
 
@@ -184,7 +188,12 @@ Tienes alguna duda, contacta conmigo a través de correo: sergiotoscano2407@outl
 
 <h5> SEMANA 9: 14/06 - 16/06 </h5>
 
-- Próxima actualización el 16/06.
+- Tutorial de capturas hecho.
+- Presentación en PDF terminada.
+- Pequeñas modificaciones en Filmaser-App y Landing Page.
+- APK final generada.
+- README actualizado.
+- Vídeo grabado.
 
 <h3> Bibliografía </h3>
 
